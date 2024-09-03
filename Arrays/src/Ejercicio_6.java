@@ -4,7 +4,7 @@ public class Ejercicio_6 {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 
-    // Crear dos arreglos de 10 números enteros cada uno
+    // Crear dos arreglos de 12 números enteros cada uno
     int[] tablaA = new int[12];
     int[] tablaB = new int[12];
     int[] tablaC = new int[24];
@@ -42,8 +42,8 @@ public class Ejercicio_6 {
       System.out.print("["+tablaC[i]+"]"+" ");
     }
 
-
-
     scanner.close();
   }
 }
+
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Arrays/Arrays.iml" filepath="$PROJECT_DIR$/Arrays/Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BucleFor/BucleFor.iml" filepath="$PROJECT_DIR$/BucleFor/BucleFor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/CURSO-JAVA.iml" filepath="$PROJECT_DIR$/.idea/CURSO-JAVA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CiclosWhile/CiclosWhile.iml" filepath="$PROJECT_DIR$/CiclosWhile/CiclosWhile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Condicionales/Condicionales.iml" filepath="$PROJECT_DIR$/Condicionales/Condicionales.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Operadores/Operadores.iml" filepath="$PROJECT_DIR$/Operadores/Operadores.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProgramaPrincipal/ProgramaPrincipal.iml" filepath="$PROJECT_DIR$/ProgramaPrincipal/ProgramaPrincipal.iml" />
+    </modules>
+  </component>
+</project>
