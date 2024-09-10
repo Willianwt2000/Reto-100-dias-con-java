@@ -58,7 +58,7 @@ public class Ejercicio_11 {
     // Imprimiendo valores de la tabla o arreglo
     System.out.println("\nEl arreglo o la tabla queda: ");
     for (int i = 0; i < tabla.length; i++) {
-      System.out.print("[" + tabla[i] + "]"+"_");
+      System.out.print("[" + tabla[i] + "]");
     }
 
     entrada.close();
