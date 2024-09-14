@@ -18,7 +18,7 @@ public class Ejercicio_14 {
     do {
       //Llenando la primera serie
       for (int i = 0; i < tabla1.length; i++) {
-        System.out.print("Digite un numero: ");
+        System.out.print("Digite un numero: "+(i+1)+":");
         tabla1[i] = entrada.nextInt();
       }
 
@@ -45,7 +45,7 @@ public class Ejercicio_14 {
     do {
       //Llenando la segunda serie
       for (int i = 0; i < tabla2.length; i++) {
-        System.out.print("Digite un numero: ");
+        System.out.print("Digite el numero: "+(i+1)+":");
         tabla2[i] = entrada.nextInt();
       }
 
@@ -88,6 +88,27 @@ public class Ejercicio_14 {
     for (int i = 0; i < tamanio; i++) { //Imprimiendo las tercera tabla
       System.out.print("["+tabla3[i]+"]");
     }
+
+    //Metodo burbuja
+    int aux; // La variable auxiliar es para intercambiar los valores
+    for (int i = 0; i < (tabla3.length -1); i++) {
+      for (int k = 0; k < (tabla3.length -1); k++) {
+        if (tabla3[k] > tabla3[k + 1]) { // Comparar elementos consecutivos
+          aux = tabla3[k];
+          tabla3[k] = tabla3[k + 1];
+          tabla3[k + 1] = aux;
+        }
+      }
+  }
+    System.out.println("");
+    System.out.println("\nTabla_3 ordenada de forma creciente:");
+   
+    for (int i = 0; i < tabla3.length; i++) {
+      System.out.print("[" + tabla3[i] + "] ");
+    }
+ 
+
+
   
     entrada.close();
   }
