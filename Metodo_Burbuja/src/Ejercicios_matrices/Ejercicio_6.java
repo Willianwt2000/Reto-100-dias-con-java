@@ -2,57 +2,55 @@ package Ejercicios_matrices;
 
 import java.util.Scanner;
 
-import javax.swing.JOptionPane;
-
-/*Crear y cargar una matriz de tamaño n x m, mostrar la suma de cada fila y cada columna */
-
+/* Utilizando dos matrices de tamaño 5x9 y 9x5, cargar la primera y transponerla en la segunda. */
 public class Ejercicio_6 {
   public static void main(String[] args) {
     Scanner entrada = new Scanner(System.in);
-    int matriz[][], nFilas, nColumnas, sumaFilas = 0, sumaColumnas;
-    nFilas = Integer.parseInt(JOptionPane.showInputDialog("Digite el numero de filas que desee en la tabla")); // filas = 2
-    nColumnas = Integer.parseInt(JOptionPane.showInputDialog("Digite el numero de columnas que desee en la tabla")); // columnas
-                                                                                                             // = 3
 
-    // Definiendo longtud de la tabla o de la matriz
-    matriz = new int[nFilas][nColumnas];
+    int matriz1[][], matrizDos[][], nFilas, nColumnas;
+    nFilas = 5; 
+    nColumnas = 9; 
 
+   
+    matriz1 = new int[nFilas][nColumnas];
+
+    
     for (int i = 0; i < nFilas; i++) {
       for (int j = 0; j < nColumnas; j++) {
         System.out.print("Matriz [" + i + "] [" + (j + 1) + "]: ");
-        matriz[i][j] = entrada.nextInt();
+        matriz1[i][j] = entrada.nextInt();
       }
     }
 
-    // Imprimir matriz
-    System.out.println("\nResultado de la matriz: ");
+    // Imprimir la primera matriz
+    System.out.println("\nResultado de la matriz 1:");
+    System.out.println("-------------------------------------------------");
     for (int i = 0; i < nFilas; i++) {
       for (int j = 0; j < nColumnas; j++) {
-        System.out.print(matriz[i][j] + " ");
+        System.out.print(matriz1[i][j] + " ");
       }
       System.out.println("");
     }
+    System.out.println("-------------------------------------------------");
 
-    // Sumar filas y columnas
+    // Gestionando la segunda matriz (transpuesta)
+    matrizDos = new int[nColumnas][nFilas]; // Cambiar dimensiones para la transposición
 
-    // suma de filas
-    System.out.println("\nSuma de filas: ");
+    // Llenar la matriz transpuesta
     for (int i = 0; i < nFilas; i++) {
-      sumaFilas = 0; //cada vez que el iterador llegue a 3 la variable sumaFIlas vuelve a ser 0
-      for (int j = 0; j < nFilas; j++) {
-        sumaFilas += matriz[i][j];
+      for (int j = 0; j < nColumnas; j++) {
+        matrizDos[j][i] = matriz1[i][j]; // Transposición
       }
-      System.out.println("La suma de la fila ["+ i +"] es: "+sumaFilas);
     }
 
-    // suma de columnas
-    System.out.println("\nSuma de Columnas: ");
-    for (int j = 0; j < nColumnas; j++) {
-      sumaColumnas = 0; //cada vez que el iterador llegue a 3 la variable sumaFIlas vuelve a ser 0
-      for (int i = 0; i < nFilas; i++) {
-        sumaColumnas += matriz[i][j];
+    // Imprimir la segunda matriz
+    System.out.println("\nResultado de la matriz 2 (transpuesta):");
+    System.out.println("-------------------------------------------------");
+    for (int i = 0; i < nColumnas; i++) {
+      for (int j = 0; j < nFilas; j++) {
+        System.out.print(matrizDos[i][j] + " ");
       }
-      System.out.println("La suma de la fila ["+ j +"] es: "+sumaColumnas);
+      System.out.println("");
     }
 
     entrada.close();
